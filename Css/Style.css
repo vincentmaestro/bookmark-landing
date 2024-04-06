@@ -48,7 +48,6 @@ nav{
 
 nav a{
     font-size: 12px;
-    font-weight: 600;
     color: var(--VeryDarkBlue);
 }
 
@@ -62,7 +61,6 @@ nav a:hover{
     color: #fff;
     border-radius: 5px;
     font-size: 12px;
-    font-weight: 600;
     box-shadow: 0 4px 7px var(--GrayishBlue);
     border: 2px solid transparent;
 }
@@ -99,7 +97,7 @@ nav a:hover{
 }
 
 .hero-text h2{
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 25px;
 }
 
@@ -130,6 +128,7 @@ nav a:hover{
     color: var(--SoftBlue);
     border: 2px solid var(--SoftBlue);
     box-shadow: none;
+    transition: all .3s;
 }
 
 .hero-btns .btn-2{
@@ -147,6 +146,7 @@ nav a:hover{
     color: var(--GrayishBlue);
     border: 2px solid var(--GrayishBlue);
     box-shadow: none;
+    transition: all .3s;
 }
 
 .features{
@@ -219,7 +219,7 @@ nav a:hover{
 }
 
 .simple-bookmarking img, .speedy-searching img, .easy-sharing img{
-    width: 45%;
+    width: 40%;
     height: 90%;
 }
 
@@ -251,8 +251,9 @@ nav a:hover{
 .hero-2-btn:hover{
     background-color: #fff;
     color: var(--SoftBlue);
-    border: 1.5px solid var(--SoftBlue);
+    border: 2px solid var(--SoftBlue);
     box-shadow: none;
+    transition: all .3s;
 }
 
 .speedy-searching, .easy-sharing{
@@ -342,6 +343,7 @@ nav a:hover{
     background-color: #fff;
     color: var(--SoftBlue);
     border: 2px solid var(--SoftBlue);
+    transition: all .3s;
 }
 
 .download-btn a:hover{
@@ -419,7 +421,7 @@ nav a:hover{
 
 .question p{
     color: var(--VeryDarkBlue);
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .question-btn{
@@ -439,6 +441,7 @@ nav a:hover{
     color: var(--SoftBlue);
     border: 2px solid var(--SoftBlue);
     box-shadow: none;
+    transition: all .3s;
 }
 
 .contact-us{
@@ -488,6 +491,7 @@ nav a:hover{
     color: var(--SoftRed);
     border: 2px solid var(--SoftRed);
     box-shadow: none;
+    transition: all .3s;
 }
 
 .footer{
@@ -515,7 +519,6 @@ nav a:hover{
 .footer-links a{
     color: #ccc;
     font-size: 13px;
-    font-weight: 600;
 }
 
 .footer-links a:hover{
@@ -552,10 +555,6 @@ nav a:hover{
         margin-top: 30px;
     }
 
-    .hero-text h2{
-        font-size: 35px;
-    }
-
     .hero-btns{
         gap: 15px;
     }
@@ -565,26 +564,14 @@ nav a:hover{
         width: 70%;
     }
 
-    .simple-bookmarking{
-        margin-top: 20px;
-        padding: 30px 60px;
-        gap: 80px;
-    }
-    
-    .speedy-searching{
-        margin-top: 20px;
-        padding: 30px 60px;
-        gap: 80px;
-    }
-    
-    .easy-sharing{
+    .simple-bookmarking, .speedy-searching, .easy-sharing{
         margin-top: 20px;
         padding: 30px 60px;
         gap: 80px;
     }
 
     .simple-bookmarking img, .speedy-searching img, .easy-sharing img{
-        width: 50%;
+        width: 45%;
     }
 
     .tab-text{
@@ -676,16 +663,8 @@ nav a:hover{
         width: 70%;
     }
 
-    .simple-bookmarking{
-        gap: 50px;
-    }
-    
-    .speedy-searching{
-        gap: 50px;
-    }
-    
-    .easy-sharing{
-        gap: 50px;
+    .simple-bookmarking, .speedy-searching, .easy-sharing{
+        gap: 70px;
     }
 
     .tab-text{
@@ -783,15 +762,7 @@ nav a:hover{
         font-size: 14px;
     }
 
-    .simple-bookmarking{
-        gap: 25px;
-    }
-    
-    .speedy-searching{
-        gap: 25px;
-    }
-    
-    .easy-sharing{
+    .simple-bookmarking, .speedy-searching, .easy-sharing{
         gap: 25px;
     }
 
@@ -839,7 +810,7 @@ nav a:hover{
     }
 
     .row{
-        width: 75%;
+        width: 85%;
     }
 
     .question-btn{
@@ -979,33 +950,35 @@ nav a:hover{
 
     .tab-buttons{
         flex-direction: column;
+        gap: 20px;
     }
 
-    .hero-2{
+    .simple-bookmarking, .speedy-searching, .easy-sharing{
         flex-direction: column;
         gap: 0;
     }
 
-    .hero-2 img{
+    .simple-bookmarking img, .speedy-searching img, .easy-sharing img{
         width: 90%;
         margin: auto auto;
     }
 
-    .hero-2-text{
+    .tab-text{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .hero-2-text h1{
+    .tab-text h1{
         font-size: 30px;
         margin-bottom: 18px;
+        text-align: center;
     }
 
-    .hero-2-text p{
-        width: 80%;
-        font-size: 17px;
+    .tab-text p{
+        width: 100%;
+        font-size: 18px;
         margin-bottom: 20px;
     }
 
@@ -1031,10 +1004,6 @@ nav a:hover{
     .faq{
         width: 90%;
         padding: 20px;
-    }
-
-    .row{
-        width: 85%;
     }
 
     .contact-tab{
@@ -1104,17 +1073,17 @@ nav a:hover{
         font-size: 15px;
     }
 
-    .hero-2{
+    .simple-bookmarking, .speedy-searching, .easy-sharing{
         padding: 5px 20px;
     }
 
-    .hero-2-text h1{
-        font-size: 23px;
+    .tab-text h1{
+        font-size: 25px;
+        text-align: center;
     }
 
-    .hero-2-text p{
-        font-size: 14.5px;
-        width: 100%;
+    .tab-text p{
+        font-size: 16px;
         text-align: center;
     }
 
